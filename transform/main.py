@@ -9,7 +9,7 @@ nltk.download('stopwords')
 stop_words = set(stopwords.words('spanish'))
 from urllib.parse import urlparse
 import pandas as pd
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('__name__')
 
 def  main(filename):
     logger.info('Starting cleaning process')

@@ -6,7 +6,7 @@ import pandas as pd
 from article import Article
 from base import Base, engine, Session
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('__name__')
 
 def main(filename):
 	Base.metadata.create_all(engine)

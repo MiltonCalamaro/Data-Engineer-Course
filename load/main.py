@@ -13,7 +13,7 @@ def main(filename):
 	session = Session()
 	articles = pd.read_csv(filename)
 	for index, row in articles.iterrows():
-		logging.info('Loading article uid {} into DB'.format(row['uid']))
+		logger .info('Loading article uid {} into DB'.format(row['uid']))
 		article = Article(row['uid'],
 						  row['body'],
 						  row['host'],

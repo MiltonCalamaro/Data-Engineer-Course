@@ -10,7 +10,7 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("__name__")
 news_sites_uids = ['eluniversal','elpais']
 
 def main():
